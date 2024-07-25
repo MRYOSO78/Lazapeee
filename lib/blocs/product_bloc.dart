@@ -2,7 +2,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../services/api_service.dart';
 import 'product_event.dart';
 import 'product_state.dart';
-import '../models/product.dart';
 
 class ProductBloc extends Bloc<ProductEvent, ProductState> {
   final ApiService apiService;
