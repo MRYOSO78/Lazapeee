@@ -5,10 +5,12 @@ import 'services/api_service.dart';
 import 'blocs/product_bloc.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MultiRepositoryProvider(
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
           title: 'Product App',
           theme: ThemeData(primarySwatch: Colors.blue),
-          home: ProductListScreen(),
+          home: const ProductListScreen(),
         ),
       ),
     );

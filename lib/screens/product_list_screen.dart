@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lazapee/widget/product_item.dart';
@@ -39,7 +41,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
       appBar: AppBar(
         title: const Text('Product List ', 
         style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),),
-        backgroundColor: Color(0xFFF99417),
+        backgroundColor: const Color(0xFFF99417),
 
 
       ),
